@@ -1,0 +1,10 @@
+<h3>I am servers Component</h3>
+<hr>
+<input type="text" [(ngModel)] = "serverName">
+<br><br>
+{{serverName}}
+<br> 
+<button [disabled]="!status" (click)="onAddNewServer()">Add New Server</button>
+<p>{{serverCreationMessage}}</p>
+<app-server></app-server>
+<app-server></app-server>
